@@ -4,7 +4,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #111;
+    background-color: #111; /* Fondo negro */
     color: #eee;
     line-height: 1.6;
 }
@@ -14,8 +14,6 @@ header {
     text-align: center;
     margin-bottom: 40px;
     padding: 40px 20px 30px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
 }
 
 header h1 {
@@ -23,8 +21,6 @@ header h1 {
     margin: 0 0 25px 0;
     color: #fff;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 300;
 }
 
 /* Descripción del workshop */
@@ -38,114 +34,79 @@ header h1 {
     font-style: italic;
 }
 
-/* Barra separadora */
+/* Barra separadora CORREGIDA */
 .divider-line {
-    width: 150px;
-    height: 1px;
-    background: linear-gradient(90deg, 
-                transparent, 
-                rgba(142, 45, 226, 0.8), 
-                transparent);
+    width: 200px;
+    height: 2px;
+    background: #8e2de2; /* Línea morada sólida */
     margin: 0 auto 30px;
-    opacity: 0.7;
+    border: none;
 }
 
 /* Subtítulo */
 .participant-subtitle {
     color: #8e2de2;
     font-size: 1.4rem;
-    margin: 0;
+    margin: 15px 0 0 0;
     font-style: italic;
-    letter-spacing: 1px;
-    font-weight: 300;
 }
 
-/* ===== GALERÍA ===== */
+/* ===== GALERÍA (manteniendo estilo original) ===== */
 .galeria {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 0 10px;
+    gap: 40px;
 }
 
 .obra {
     background: #222;
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
     border-left: 4px solid #4a00e0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .obra h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .obra h2 em {
     color: #8e2de2;
     font-style: normal;
-    font-weight: 300;
 }
 
 .obra video {
     width: 100%;
-    border-radius: 5px;
-    margin: 15px 0;
+    border-radius: 4px;
+    margin: 10px 0;
     background: #000;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Información del artista */
 .info-artista {
-    margin-top: 20px;
+    margin-top: 15px;
     color: #ccc;
-    font-size: 0.95rem;
 }
 
 .info-artista p {
-    margin: 8px 0;
+    margin: 5px 0;
 }
 
 .info-artista a {
     color: #8e2de2;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .info-artista a:hover {
-    color: #b36eff;
     text-decoration: underline;
 }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
-    margin-top: 80px;
-    padding: 30px;
+    margin-top: 60px;
+    padding: 20px;
     color: #666;
     font-size: 0.9rem;
-    border-top: 1px solid #333;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    header {
-        padding: 30px 15px;
-    }
-    
-    header h1 {
-        font-size: 2.2rem;
-    }
-    
-    .workshop-description {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-    
-    .obra {
-        padding: 20px;
-    }
 }
