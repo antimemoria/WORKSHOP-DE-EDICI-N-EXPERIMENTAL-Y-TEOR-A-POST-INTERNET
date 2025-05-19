@@ -16,10 +16,10 @@ header {
     padding: 40px 20px 30px;
 }
 
-/* ESTILO ESPECIAL (SOLO PARA TÍTULO Y SUBTÍTULO) */
+/* ESTILO ESPECIAL PARA AMBOS TEXTOS (BLANCO) */
 header h1,
 .participant-subtitle {
-    color: #fff;
+    color: #ffffff; /* Blanco puro */
     font-size: 1.8rem;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -38,66 +38,20 @@ header h1,
     font-style: italic;
 }
 
-/* Barra separadora */
+/* Barra separadora (conserva el morado solo aquí) */
 .divider-line {
     width: 200px;
     height: 1px;
-    background: #8e2de2;
+    background: #8e2de2; /* Morado solo en la línea */
     margin: 25px auto;
     opacity: 0.6;
 }
 
-/* ===== GALERÍA (conserva tus estilos actuales) ===== */
+/* ===== GALERÍA ===== */
 .galeria {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.obra {
-    background: #222;
-    padding: 25px;
-    border-radius: 8px;
-    border-left: 4px solid #4a00e0;
-}
-
-.obra h2 {
-    margin: 0 0 15px 0;
-    color: #fff;
-    font-size: 1.4rem;
-}
-
-.obra h2 em {
-    color: #8e2de2;
-    font-style: normal;
-}
-
-.obra video {
-    width: 100%;
-    border-radius: 4px;
-    margin: 10px 0;
-    background: #000;
-}
-
-.info-artista {
-    margin-top: 15px;
-    color: #ccc;
-}
-
-.info-artista p {
-    margin: 5px 0;
-}
-
-.info-artista a {
-    color: #8e2de2;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    margin-top: 60px;
-    padding: 20px;
-    color: #666;
-    font-size: 0.9rem;
-}
+/* ... (conserva el resto de tus estilos existentes) ... */
