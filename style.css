@@ -4,7 +4,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #111; /* Fondo negro */
+    background-color: #111;
     color: #eee;
     line-height: 1.6;
 }
@@ -16,42 +16,38 @@ header {
     padding: 40px 20px 30px;
 }
 
-header h1 {
-    font-size: 2.8rem;
-    margin: 0 0 25px 0;
+/* ESTILO ESPECIAL (SOLO PARA TÍTULO Y SUBTÍTULO) */
+header h1,
+.participant-subtitle {
     color: #fff;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 0 10px 0;
 }
 
-/* Descripción del workshop */
+/* Descripción normal */
 .workshop-description {
     max-width: 700px;
     margin: 0 auto 30px;
     color: #bbb;
     line-height: 1.7;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     text-align: center;
     font-style: italic;
 }
 
-/* Barra separadora CORREGIDA */
+/* Barra separadora */
 .divider-line {
     width: 200px;
-    height: 2px;
-    background: #8e2de2; /* Línea morada sólida */
-    margin: 0 auto 30px;
-    border: none;
+    height: 1px;
+    background: #8e2de2;
+    margin: 25px auto;
+    opacity: 0.6;
 }
 
-/* Subtítulo */
-.participant-subtitle {
-    color: #8e2de2;
-    font-size: 1.4rem;
-    margin: 15px 0 0 0;
-    font-style: italic;
-}
-
-/* ===== GALERÍA (manteniendo estilo original) ===== */
+/* ===== GALERÍA (conserva tus estilos actuales) ===== */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -98,11 +94,6 @@ header h1 {
     font-weight: bold;
 }
 
-.info-artista a:hover {
-    text-decoration: underline;
-}
-
-/* ===== FOOTER ===== */
 footer {
     text-align: center;
     margin-top: 60px;
