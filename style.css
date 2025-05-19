@@ -1,124 +1,151 @@
-/* Estilos para el header */
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111;
+    color: #eee;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
 header {
     text-align: center;
     margin-bottom: 40px;
-    padding: 30px 0;
+    padding: 40px 20px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 0 0 25px 0;
     color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
-.descripcion-workshop {
+/* Descripción del workshop */
+.workshop-description {
     max-width: 700px;
-    margin: 0 auto;
-    padding: 0 20px;
-    color: #aaa;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-}
-
-.descripcion-workshop p {
-    margin: 0;
-}
-
-.descripcion-workshop em {
+    margin: 0 auto 30px;
+    color: #bbb;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    text-align: center;
     font-style: italic;
 }
 
-.barra-separacion {
+/* Barra separadora */
+.divider-line {
     width: 150px;
     height: 1px;
-    background: #8e2de2;
-   
-/* Galería de obras */
+    background: linear-gradient(90deg, 
+                transparent, 
+                rgba(142, 45, 226, 0.8), 
+                transparent);
+    margin: 0 auto 30px;
+    opacity: 0.7;
+}
+
+/* Subtítulo */
+.participant-subtitle {
+    color: #8e2de2;
+    font-size: 1.4rem;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* ===== GALERÍA ===== */
 .galeria {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+    padding: 0 10px;
 }
 
 .obra {
     background: #222;
-    padding: 25px;
+    padding: 30px;
     border-radius: 8px;
     border-left: 4px solid #4a00e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .obra h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .obra h2 em {
     color: #8e2de2;
     font-style: normal;
+    font-weight: 300;
 }
 
 .obra video {
     width: 100%;
-    border-radius: 4px;
-    margin: 10px 0;
+    border-radius: 5px;
+    margin: 15px 0;
     background: #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Información del artista */
 .info-artista {
-    margin-top: 15px;
+    margin-top: 20px;
     color: #ccc;
+    font-size: 0.95rem;
 }
 
 .info-artista p {
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .info-artista a {
     color: #8e2de2;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .info-artista a:hover {
+    color: #b36eff;
     text-decoration: underline;
 }
 
-/* Pie de página */
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
-    margin-top: 60px;
-    padding: 20px;
+    margin-top: 80px;
+    padding: 30px;
     color: #666;
     font-size: 0.9rem;
+    border-top: 1px solid #333;
 }
 
-/* Responsive para móviles */
-@media (max-width: 600px) {
-    body {
-        padding: 15px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .workshop-description {
+        font-size: 1rem;
+        padding: 0 10px;
     }
     
     .obra {
-        padding: 15px;
+        padding: 20px;
     }
-}
-
-/* Estilos para la nueva descripción */
-.descripcion-workshop {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 0 20px;
-    color: #aaa;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: center;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-}
-
-.descripcion-workshop p {
-    margin: 0;
 }
