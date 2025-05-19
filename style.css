@@ -9,23 +9,37 @@ body {
     line-height: 1.6;
 }
 
-/* Encabezado */
+/* Estilos para el header reorganizado */
 header {
     text-align: center;
     margin-bottom: 40px;
     padding: 30px 0;
-    border-bottom: 1px solid #333;
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin: 0;
+    margin: 0 0 10px 0;
     color: #fff;
 }
 
-header p {
+.descripcion-workshop {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
     color: #aaa;
-    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #8e2de2;
+    font-size: 1.2rem;
+    margin: 20px 0 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    display: inline-block;
+    padding: 10px 30px 0 30px;
 }
 
 /* Galería de obras */
