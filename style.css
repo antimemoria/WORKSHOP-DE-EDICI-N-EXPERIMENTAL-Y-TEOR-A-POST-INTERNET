@@ -1,162 +1,99 @@
-/* Reset y variables */
-:root {
-    --primary-color: #1a1a1a;
-    --secondary-color: #666;
-    --accent-color: #0066cc;
-    --bg-color: #f5f5f5;
-    --card-bg: #fff;
-    --max-width: 1200px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', Arial, sans-serif;
-}
-
+/* style.css */
 body {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
 }
 
-.container {
-    width: 100%;
-    max-width: var(--max-width);
+.galeria {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
+.obra {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.obra:hover {
+    transform: translateY(-3px);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-height: 225px;
+    display: block;
+    margin: 10px 0;
+    background: black;
+}
+
+h1, h2 {
+    color: #333;
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.info-artista {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+.info-artista p {
+    margin: 5px 0;
 }
 
 .workshop-description {
     max-width: 700px;
-    margin: 0 auto 1.5rem;
-    color: var(--secondary-color);
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #666;
 }
 
 .divider-line {
     height: 1px;
-    background: linear-gradient(to right, transparent, #ccc, transparent);
+    background: #ddd;
+    margin: 20px auto;
     width: 80%;
-    margin: 1.5rem auto;
 }
 
 .participant-subtitle {
+    text-align: center;
     font-style: italic;
-    color: var(--secondary-color);
-}
-
-/* Galería de videos */
-.video-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-}
-
-.video-item {
-    width: 100%;
-    background: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.video-item:hover {
-    transform: translateY(-5px);
-}
-
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    background: #000;
-}
-
-.video-wrapper video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-info {
-    padding: 1.2rem;
-}
-
-.video-info h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-    font-weight: 600;
-}
-
-.video-info h2 em {
-    font-style: italic;
-    color: var(--secondary-color);
-}
-
-.artist-info {
-    font-size: 0.9rem;
-}
-
-.artist-info p {
-    margin-bottom: 0.5rem;
-}
-
-.label {
-    font-weight: 500;
-    color: var(--secondary-color);
-}
-
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eee;
-    color: var(--secondary-color);
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .container {
-        padding: 1.5rem;
-    }
-    
-    .video-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .video-gallery {
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .galeria {
         grid-template-columns: 1fr;
     }
     
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
